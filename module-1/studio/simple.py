@@ -3,6 +3,9 @@ from typing import Literal
 from typing_extensions import TypedDict
 from langgraph.graph import StateGraph, START, END
 
+from dotenv import load_dotenv
+
+load_dotenv()
 # State
 class State(TypedDict):
     graph_state: str
